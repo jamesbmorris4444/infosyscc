@@ -1,0 +1,2 @@
+rootProject.name = "infosyscc"
+include ':app'

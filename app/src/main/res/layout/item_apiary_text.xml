@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="apiaryItemTextViewModel"
+            type="com.sample.infosyscc.apiary_screen.ApiaryItemTextViewModel" />
+    </data>
+    
+    <TextView
+        android:id="@+id/text_for_text_card_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:text_color="@{apiaryItemTextViewModel.textColor}"
+        app:text_size="@{apiaryItemTextViewModel.textSize}"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:text="@{apiaryItemTextViewModel.text}"/>
+    
+</layout>
